@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+select option:disabled{
+    color: gray;
+}
+option:valid{
+    color: rebeccapurple;
+}
+
+.container{
+    background-color: rgb(107, 161, 223);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.con{
+    margin-top:23px;
+    margin-bottom:23px;
+    background-color: white;
+    width: 97%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Ccon{
+    padding: 20px;
+    background-color: rgb(247, 243, 237);
+    height: max-content;
+    border-radius: 13px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 1px 1px 3px 1px rgb(183, 173, 173);
+}
+
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+}
+
+.judul h1{
+    font-size: 34px;
+    font-family: tahoma;
+    margin-bottom:10px ;
+
+}
+input[type="text"],select{
+    margin-top: 14px;
+    width: 80%;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid rgb(182, 182, 182);
+
+}
+
+.comment{
+    height: 40px;
+    
+}
+
+
+select{
+    width: 85%;
+}
+input[type="submit"]{
+    margin-top: 20px;
+    padding: 7px;
+    font-family: 'tahoma';
+    border-radius: 10px;
+    border: 0px;
+    font-weight: 300;
+    background-color:rgb(51, 109, 176) ;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+input[type="submit"]:hover{
+    background-color:rgb(107, 161, 223) ;
+}
+.daftar{
+    position: absolute;
+    bottom: 45px;
+    background-color: rgb(19, 159, 28);
+    padding: 6px;
+    border-radius: 14px;
+    width: 300px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.daftar a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family: tahoma; 
+
+}
+.daftar:hover{
+    background-color: rgb(103, 243, 112);
+
+}
+
+
+
+@media (max-width: 427px) {
+    .Ccon{
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .daftar{
+        width: 250px;
+    }
+
+
+
+}
+
+.log{
+    position: absolute;
+    top: 37px;
+    color: rgb(4, 4, 4);
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.log span{
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'tahoma';
+    
+
+}
+
+@media (max-width: 600px) {
+    .log span{
+        font-size: 25px;
+    }
+    
+    
+
+}
+@media (max-width: 400px) {
+    .log span{
+        font-size: 18px;
+    }
+    .log{
+        top: 45px;
+    }
+    
+
+}
+@media (max-width: 390px){
+    .log span{
+        font-size: 18px;
+        text-align: center;
+    }
+    .log{
+        top: 38px;
+        
+    }
+
+
+}
+
+
+

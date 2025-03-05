@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="done.css">
+</head>
+<body>
+    <div class="container">
+        <div class="con">
+            <div class="ccon">
+                <div class="judul"><h1>Daftar Status</h1></div>
+                <div class="nav">
+                    <div class="back a">
+                        <div class="t"><a href="daftar.ejs">Back</a></div>
+                    </div>
+                    <div class="done a">
+                        <div class="Idone t"><a href="">Done</a></div>
+                    </div>
+                    <div class="not a">
+                        <div class="Inot t"><a href="not.ejs">Not Started</a></div>
+                    </div>
+                    <div class="progress a">
+                        <div class="Iprogress t"><a href="progress.ejs">In Progress</a></div>
+                    </div>
+                
+            </div>
+            <div class="tabel">
+                <table>
+                    <tr class="head">
+                        <th>No Laporan</th>
+                        <th>Nama Pelanggan</th>
+                        <th>Kontak</th>
+                        <th>Jenis Komplain</th>
+                        <th>Detail Komplain</th>
+                        <th>Status</th>
+                        
+                    </tr>
+                    
+                    
+                    
+                    
+
+                    <% aksi.forEach(e=> { %>
+                        <tr>
+                            <td><%= e.No_Laporan %></td>
+                            <td><%= e.Nama %></td>
+                            <td><%= e.Kontak %></td>
+                            <td style="font-weight: bold;font-size: 14px;font-family: tahoma;"><%= e.Jenis_Komplain  %></td>
+                            <td class="ovv" ><%= e.Detail_Komplain %></td>
+                            <td><% if(e.Status == 'Not Started'){%><span style="color:red;font-weight: bold;font-size: 11px;font-family: tahoma"><%= e.Status %></span><%}%>
+                                <% if(e.Status == 'Done'){%><span style="color:rgb(55, 205, 0);font-weight: bold;font-size: 11px;font-family: tahoma"><%= e.Status %></span><%}%>
+                                <% if(e.Status == 'In Progress'){%><span style="color:rgb(36, 55, 255);font-weight: bold;font-size: 11px;font-family: tahoma"><%= e.Status %></span><%}%>
+                            </td>
+                        </tr>
+                     
+                    <% }) %>
+                    <tr>
+                        <td>-------</td>
+                        <td>-------</td>
+                        <td>-------</td>
+                        <td>-------</td>
+                        <td>-------</td>
+                        <td>-------</td>
+                        
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+</body>
+</html>

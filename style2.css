@@ -1,0 +1,461 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+th{
+    padding: 5px;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    background-color: rgb(107, 161, 223);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.con{
+    margin-top:23px;
+    margin-bottom:23px;
+    margin-right:23px;
+    margin-left:23px;
+    background-color: white;
+    width: 100%;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    overflow:auto;
+
+    
+}
+.judul{
+    margin-bottom: 28px;
+    font-size: 21px;
+    font-family: tahoma;
+
+    
+    
+}
+
+.Ccon{
+    
+    display: block;
+    margin-left: auto;
+    margin-right:auto ;
+    width: 100%;
+    margin-top: 10px;
+    
+    
+    
+}
+.CCcon{
+    
+    display: block;
+    width: 95%;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+    margin-top: 38px;
+    margin: auto;
+
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+img{
+    width: 17px;
+    margin-top: 4px;
+    filter: invert(100%);
+}
+.judul h1{
+    text-align: center;
+}
+.judul{
+    margin-top: 15px;
+}
+
+.cari{
+    display: flex;
+    justify-content: space-between;
+    background-color:  rgb(62, 69, 62);
+    padding: 4px;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 6%;
+    align-items: center;
+    
+    
+    
+}
+.cari:hover{
+    background-color:rgb(58, 58, 58);
+}
+.cari a{
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: tahoma;
+}
+.periksa_status{
+    
+    background-color: rgb(24, 100, 138);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 13%;
+
+}
+
+.periksa_status:hover{
+    background-color: rgb(21, 61, 94);
+}
+.tulisan_status{
+    font-family: tahoma;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.com{
+    width: 20px;
+}
+
+.jar1{
+    margin-right: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    font-family: tahoma;
+    border-radius: 10px;
+}
+
+.head{
+    
+    background-color: rgb(23, 164, 235);
+    padding: 80px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    
+    
+    
+}
+th{
+    border: 1px solid grey;
+}
+
+tr{
+    width: 100%;
+    height: 30px;
+    
+    
+}
+td{
+    
+    border: 1px solid gray;
+    width: 200px;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:7px ;
+    padding-bottom: 7px;
+    overflow: auto;
+    height:82px;
+    align-items: center;
+}
+.ovv{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
+    
+    width: 300px;
+}
+
+
+tr:nth-child(even){
+    background-color: rgb(221, 221, 221);
+}
+@media (max-width: 1100px){
+    
+    .komplain_terbanyak{
+        width: 27%;
+    }
+
+}
+@media (max-width: 933px){
+    
+    .komplain_terbanyak{
+        width: 31%;
+    }
+
+}
+@media (max-width: 836px){
+    
+    .cari{
+        width: 90px;
+
+    }
+    .komplain_terbanyak{
+        width: 250px;
+
+    }
+
+}
+@media (max-width: 639px){
+    
+    .Ccon{
+        overflow: auto;
+    }
+
+}
+@media (max-width: 404px){
+    
+    .cari{
+        width: 110px;
+        align-items: center;
+    }
+    .komplain_terbanyak{
+        width: 270;
+    }
+    
+}
+@media (max-width: 1150px){
+    
+    .cari{
+        width: 9%;
+    }
+    .periksa_status{
+        width: 20%;
+    }
+}
+
+
+
+.aksi{
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    width: 100%;
+    
+}
+input[type='submit']{
+    border: none;
+    padding: none;
+    
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 3px;
+    padding: 2px;
+}
+.form_hapus{
+    margin-left: 34px;
+    
+    background-color: rgb(233, 64, 64);
+    width: 50%;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+.form_ubah{
+    background-color: rgb(61, 185, 243);
+    width: 50%;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 34px;
+    
+}
+.input_hapus{
+    background-color: rgb(233, 64, 64) ;
+    
+    cursor: pointer;
+}
+.input_ubah{
+    background-color: rgb(61, 185, 243);
+    
+    cursor: pointer;
+}
+.ubah{
+    margin-bottom: 4px;
+    margin-left: 2px;
+
+}
+.hapus{
+    margin-bottom: 4px;
+    margin-left: 2px;
+    filter: invert(100%);
+}
+.input_hapus,.input_ubah{
+    color: white;
+    font-family: tahoma;
+}
+.halU{
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(2, 191, 2);
+    padding: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 10px;
+    
+    width: 4%;
+    align-items: center;
+    margin-right: 10px;
+    
+}
+
+.halU a{
+    text-decoration: none;
+    color: white;
+    font-family: tahoma;
+}
+.halU:hover{
+    background-color: rgb(3, 109, 3);
+
+}
+.page_ubah{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    left: 39%;
+    top: 30%;
+    border: 1px solid black;
+    display: none;
+}
+@media (max-width: 1050px){
+    
+    .input_hapus,.input_ubah{
+        font-size: 10px;
+        
+    }
+    .hapus,.ubah{
+        width: 14px;
+    }
+    form{
+        padding-right: 10px;
+    }
+}
+@media (max-width: 931px){
+    
+    form{
+        width: 160px;
+    }
+}
+@media (max-width: 766px){
+    
+    .cari{
+        width: 11%;
+    }
+    .periksa_status{
+        width: 24%;
+    }
+    .halU{
+        width: 35px;
+    }
+}
+@media (max-width: 665px){
+    th{
+        font-size: 13px;
+        padding: 5px;
+    }
+    
+    .hapus,.ubah{
+        display: none;
+    }
+    .input_hapus,.input_ubah{
+        padding: 2px 5px;
+        text-align: center;
+        font-size: 11px;
+        
+    }
+    form{
+        margin: none;
+    }
+
+    .cari{
+        width: 13%;
+    }
+    .periksa_status{
+        width: 27%;
+    }
+    .tulisan_status,.cari a{
+        font-size: 12px;
+    }
+    .gam1 img{
+        width: 14px;
+    }
+    .halU{
+        width: 40px;
+    }
+}
+@media (max-width: 461px){
+    
+    .halU{
+        width: 40px;
+    }
+    .periksa_status{
+        justify-content: space-between;
+        
+    }
+    .periksa_status{
+        width: 34%;
+    }
+    .cari{
+        width: 15%;
+    }
+    
+}
+@media (max-width: 379px){
+    
+    .periksa_status{
+        width: 37%;
+    }
+    .cari{
+        width: 17%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

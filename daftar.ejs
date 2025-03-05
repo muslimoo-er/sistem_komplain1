@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.cdnfonts.com/css/neon-80s" rel="stylesheet">
+</head>
+
+<body>
+    <div class="1">
+
+    </div>
+    <div class="container">
+        <div class="con">
+            <div class="Ccon">
+                <div class="judul"><h1>Daftar Komplain</h1></div>
+                
+                <div class="CCcon">
+                    <div class="nav">
+                        <div class="halU">
+                            <a href="/index.ejs" class="halU1"><img src="add.png" alt=""></a>
+                        </div>
+                        <div class="cari jar1">
+                            <div class="gam1"><img src="search.png" alt=""></div>
+                            <a href="cari.ejs" class="tulisan_cari">cari</a>
+                        </div>
+    
+                        <div class="periksa_status jar1">
+                            <div class="gam1"><img src="status.png" alt="" class="com"></div>
+                            <a href="done.ejs" class="tulisan_status">Periksa Status</a>
+                        </div>
+
+                    </div>
+                     
+    
+                    <div class="tabel">
+                        <table>
+                            <tr class="head">
+                                <th>No Laporan</th>
+                                <th>Nama Pelanggan</th>
+                                <th>Kontak</th>
+                                <th>Jenis Komplain</th>
+                                <th>Detail Komplain</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
+                            </tr>
+                            <% let balik = komplain.reverse() %>
+                            
+                            <% balik.forEach(e=> { %>
+                                <tr>
+                                    <td><%= e.No_Laporan %></td>
+                                    <td><%= e.Nama %></td>
+                                    <td><%= e.Kontak %></td>
+                                    <td style="font-weight: bold;font-size: 14px;font-family: tahoma;"><%= e.Jenis_Komplain  %></td>
+                                    <td class="ovv" ><%= e.Detail_Komplain %></td>
+                                    <td><% if(e.Status == 'Not Started'){%><span style="color:red;font-weight: bold;font-size: 11px;font-family: tahoma"><%= e.Status %></span><%}%>
+                                        <% if(e.Status == 'Done'){%><span style="color:rgb(55, 205, 0);font-weight: bold;font-size: 11px;font-family: tahoma"><%= e.Status %></span><%}%>
+                                        <% if(e.Status == 'In Progress'){%><span style="color:rgb(36, 55, 255);font-weight: bold;font-size: 11px;font-family: tahoma"><%= e.Status %></span><%}%>
+                                    </td>
+                                    <td class="HU">
+                                        <div class="aksi">
+                                            <form action="/hapus" method="post" class="form_hapus">
+                                                <input type="hidden" name="nam" value="<%= e.Nama %>">
+                                                <img src="delete.png" alt="" class="hapus" title="hapus">
+                                                <input type="submit" value="hapus" class="input_hapus">
+                                            </form>
+                                            
+
+                                            <form action="/ubah" method="post" class="form_ubah">
+                                                <input type="hidden" name="nam" value="<%= e.Nama %>">
+                                                <img src="refresh.png" alt="" class="ubah" title="ubah">
+                                                <input type="submit" value="ubah" class="input_ubah" >
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                             
+                            <% }) %>
+                            <tr>
+                                <td>-------</td>
+                                <td>-------</td>
+                                <td>-------</td>
+                                <td>-------</td>
+                                <td>-------</td>
+                                <td>-------</td>
+                                <td>-------</td>
+                            </tr>
+                        </table>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const komplain_terbanyak = document.querySelector('.komplain_terbanyak')
+        komplain_terbanyak.addEventListener('click',()=>{
+            alert('Page Masih dalam Pengembangan')
+        })
+
+    </script>
+    
+</body>
+    
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ubah.css">
+</head>
+<body>
+    <div class="container">
+        <div class="con">
+            <div class="judul"><h1>Ubah Status</h1></div>
+            <form action="/terubah" method="post" class="Fterubah">
+                <select name="terubah" id="terubah" required class="terubah">
+
+                    <option selected disabled hidden value="">Ubah Status</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Not Started">Not Started</option>
+                    <option value="Done">Done</option>
+                </select>
+                <input type="submit" value="simpan perubahan" class="Iterubah">
+            </form>
+        </div>
+    </div>
+    <script>
+        const select = document.getElementById("terubah");
+    
+        select.addEventListener("change", function() {
+            if (this.value === "") {
+                this.style.color = "gray";
+            } else {
+                this.style.color = "black";
+            }
+        });
+
+        
+        select.style.color = "gray";
+        
+
+       
+    </script>
+</body>
+</html>

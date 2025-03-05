@@ -1,0 +1,49 @@
+<input type="text" name="detail_komplain" class="comment" placeholder="Detail Komplain" required >
+
+.komplain_terbanyak{
+    background-color: rgb(83, 221, 255);
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border-radius: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+
+}
+.tulisan_komplain{
+    font-family: tahoma;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+<% const pool = pool.pool;
+ 
+                                                const hapus = document.querySelector(".delete")
+                                                hapus.addEventListener('click',async()=>{
+                                                let keran;
+                                                    try {
+                                                        keran = await pool.getConnection()
+                                                        await keran.query('DELETE FROM komplain WHERE Nama = (?)',e.Nama)
+                                                    } catch (error) {
+                                                         console.error(error)
+                                                            
+                                                    }finally{
+                                                        if(keran) keran.release()
+                                                    }
+                                                        
+                                                    }) %>
+                                                    
+
+.Idone{
+    
+
+}
+.Inot_started{
+
+}
+.Iin_progress{
+
+}

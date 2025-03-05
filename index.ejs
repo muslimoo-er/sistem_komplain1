@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/neon-80s" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="con">
+            <div class="log"><span>Complaint Management System</span></div>
+            
+
+            <div class="Ccon">
+
+                <div class="judul">
+                    <h1>INPUT</h1>
+                </div>
+
+                <form action="/input" method="post">
+                    <input type="text" name="nama_pelanggan" placeholder="Nama Pelanggan" class="a" required>
+
+                    <input type="text" name="kontak" placeholder="Kontak(telepon/gmail)" class="a" required>
+
+                    <select id="komplain" name="komplain" required>
+                        <option selected disabled hidden value="">Pilih Jenis Komplain</option>
+                        <option value="Akademik">Akademik</option>
+                        <option value="Peraturan">Peraturan dan Kedisiplinan</option>
+                        <option value="Pelayanan">Pelayanan</option>
+                        <option value="Fasilitas">Fasilitas</option>
+                        <option value="Keamanan">Keamanan</option>
+                        <option value="Makanan">Makanan dan minuman</option>
+                        <option value="Kantin">Kantin</option>
+                        <option value="Biaya">Biaya sekolah</option>
+                    </select>
+
+                    <input type="text" name="detail_komplain" class="comment" placeholder="Detail Komplain (max 200 karakter)" maxlength="200" required >
+
+                    <select id="status" name="status" required>
+                        <option selected disabled hidden value="">Pilih Status</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Not Started">Not Started</option>
+                        <option value="Done">Done</option>
+
+                    <input type="submit" value="Kirim Komplain" class="submit">                    
+                </form>
+                
+            </div>
+            <div class="daftar">
+                <a href="daftar.ejs">Lihat Daftar Komplain</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const select = document.getElementById("komplain");
+    
+        select.addEventListener("change", function() {
+            if (this.value === "") {
+                this.style.color = "gray";
+            } else {
+                this.style.color = "black";
+            }
+        });
+    
+        
+        select.style.color = "gray";
+        const selectt = document.getElementById("status");
+    
+        selectt.addEventListener("change", function() {
+            if (this.value === "") {
+                this.style.color = "gray";
+            } else {
+                this.style.color = "black";
+            }
+        });
+    
+        
+        selectt.style.color = "gray";
+
+        const submit = document.querySelector('.submit')
+
+        
+        
+            
+            
+        
+        
+
+        
+    </script>
+    
+</html>

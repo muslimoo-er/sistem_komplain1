@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+select option:disabled{
+    color: gray;
+}
+.container{
+    background-color: rgb(107, 161, 223);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.con{
+    margin-top:23px;
+    margin-bottom:23px;
+    background-color: white;
+    width: 97%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70px;
+    
+    
+    padding: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+    box-shadow: 1px 1px 1px 2px rgb(112, 112, 112);
+    border-radius: 6px;
+    justify-content: center;
+    text-align: center;
+    
+    
+
+}
+.terubah{
+    margin-bottom: 40px;
+    
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: tahoma;
+    border-radius: 5px;
+    border: 1px solid rgb(67, 67, 67);
+
+    
+}
+.Iterubah{
+    
+    
+    padding: 6px;
+
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(18, 98, 135);
+    font-family: tahoma;
+    border:0px;
+    cursor: pointer;
+}
+.judul{
+    position: absolute;
+    text-align: center;
+    top: 120px;
+}

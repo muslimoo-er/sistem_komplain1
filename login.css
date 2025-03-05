@@ -1,0 +1,223 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+}
+
+.check-list{
+    width: 230px;
+    margin-left: 20px;
+    filter: invert(40%);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(107, 161, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+}
+.con{
+    width: 95%;
+    background-color: white;
+    border-radius: 20px;    
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kiri{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(205, 255, 254);
+    padding-left:10px ;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    
+    
+}
+.kanan{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding-right:10px ;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    align-items: center;
+    height: 100%;
+
+    
+}
+
+.con1,.con2{
+    padding: 20px;
+    
+    
+}
+.ki{
+    margin-bottom: 40px;
+
+}
+
+.ka{
+    margin-bottom: 20px;
+}
+
+
+.i{
+    margin-bottom: 20px;
+}
+.judul{
+    font-family: 'Neon 80s';
+    margin-bottom: 8px;
+    font-size: 40px;
+    color:  rgb(23, 43, 66);
+    font-weight: 600;
+    margin-right: 20px;
+    
+}
+.tulisan {
+    font-family: 'Neon 80s';
+    font-size: 17px;
+    color: rgb(11, 26, 43);
+    
+}
+.judul2{
+    font-family: 'Neon 80s';
+    color: rgb(23, 43, 66);
+    font-size: 40px;
+    text-align: center;
+    
+}
+span{
+    font-family: 'Neon 80s';
+    color:  rgb(107, 161, 223);
+
+}
+
+input{
+    border-radius: 15px;
+    border: 1px solid rgb(102, 102, 102);
+    padding: 5px;
+    width: 260px;
+    transition: 2s;
+    
+}
+h4{
+    font-family: tahoma;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(119, 120, 120);
+}
+.forgot{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+
+}
+.forgot a{
+    color: rgb(72, 118, 152);
+
+}
+.sign{
+    background-color: rgb(23, 43, 66);
+    font-family: tahoma;
+    border: 0px;
+    color: white;
+    font-weight: 500;
+    padding: 7px;
+    transition: 1s;
+}
+.sign:hover{
+    cursor: pointer;
+    background-color: rgb(107, 161, 223);
+    
+
+}
+
+.atau{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.garis1,.garis2{
+    width: 50px;
+    background-color: rgb(86, 86, 86);
+    height: 1px;
+    margin-top: 9px;
+}
+.or{
+    font-family: tahoma;
+    font-weight: 500;
+}
+.google{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.google p{
+    background-color: rgb(255, 255, 255);
+    padding: 6px;
+    font-family: Arial;
+    font-size: 13px;
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 15px;
+    color: rgb(82, 82, 82);
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.249);
+}
+input[type='text']:hover{
+    background-color: rgb(166, 206, 250);
+    cursor: pointer;
+    
+}
+input[type='password']:hover{
+    background-color: rgb(166, 206, 250);
+    cursor: pointer;
+    
+}
+@media (max-width:635px) {
+    .kiri{
+        display: none;
+    }
+    .con{
+        justify-content: center;
+    }
+}
+
+.logo{
+    width: 70px;
+    text-align: center;
+    margin-top: 10px;
+}
+.create{
+    display: flex;
+    display: block;
+    gap: 10px;
+    margin: auto;
+    transform: translateY(-20px);
+}
+.tul-create span{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: arial;
+    color: rgb(209, 78, 78);
+
+}
+
